@@ -11,7 +11,7 @@ int main(void)
 	do {
 		char *input = 0;
 
-		print_promt();
+		print_prompt();
 
 		err = read_line(&input);
 

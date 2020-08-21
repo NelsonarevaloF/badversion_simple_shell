@@ -9,12 +9,13 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-void print_prompt();
+void print_prompt(void);
 int read_line(char **input);
 void strip_line(char *line);
-int eval(const char *input);
+int eval(char *input);
 int tokenize_line(char *line, char ***tokens);
 int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
+char *_strdup(char *src);
 
 #endif

@@ -24,12 +24,38 @@ return (i);
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	char a = 0;
+	char b = 0;
 
-	for (i = 0; src[i] != '\0'; i++)
+	if (dest && src)
 	{
-		dest[i] = src[i];
-	}
-	*(dest + i) = '\0';
+		while (*(src + a))
+			++a;
+
+		if (src + a <= dest)
+		{
+			do {
+				*(dest + b++) = *src++;
+			} while (a--);
+
+		}
+
 	return (dest);
+	}
+return (dest);
+}
+
+/**
+ * _strdup - duplicates a string
+ * @src: string to duplicate
+ * Return: pointer to a string
+ */
+char *_strdup(char *src)
+{
+	char *dst = malloc(_strlen(src) + 1);
+
+	if (dst == NULL)
+		return (NULL);
+	_strcpy(dst, src);
+	return (dst);
 }

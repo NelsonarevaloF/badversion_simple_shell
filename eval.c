@@ -1,4 +1,4 @@
-#include "shell.c"
+#include "shell.h"
 
 /**
  * eval - this function manages the others functions and make a
@@ -6,13 +6,13 @@
  * @input: string that the user entered through standard input
  * Return: if success return 0, otherwise 1
  */
-int eval(const char *input)
+int eval(char *input)
 {
 	char **tokens;
 	pid_t pid;
 
 	/*duplicate the input since strtok would modify it*/
-	char *input_dup = _strcpy(input);
+	char *input_dup = _strdup(input);
 
 	int num_tokens = tokenize_line(input_dup, &tokens);
 
