@@ -1,0 +1,15 @@
+.TH man 1 "20 Aug 2020" "shell man page"
+.SH NAME
+.B Arevalo's and Garzón's shell
+- Simple shell, with all the basic functions of a Linux Shell
+.SH SYNOPSIS
+shell [command][argument][...][...][file][file1][...]
+.SH DESCRIPTION
+This simple shell is a personal project made by Nelson Arevalo and Daniel Garzón
+for Holberton School and has all the functionalities of the a Linux Shell.
+.SH SEE AlSO
+.I bash
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Nelson Arevalo, Daniel Garzón
