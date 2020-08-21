@@ -43,26 +43,26 @@ What you should learn from this project:
   - `fflush (man 3 fflush)`
   - `fork (man 2 fork)`
   - `free (man 3 free)`
-  - `_exit (man 3 getcwd)`
-  - `_exit (man 3 getline)`
-  - `_exit (man 3 isatty)`
-  - `_exit (man 2 kill)`
-  - `_exit (man 3 malloc)`
-  - `_exit (man 2 open)`
-  - `_exit (man 3 opendir)`
-  - `_exit (man 3 perror)`
-  - `_exit (man 2 read)`
-  - `_exit (man 3 readdir)`
-  - `_exit (man 2 signal)`
-  - `_exit (man 2 stat)`
-  - `_exit (man 2 lstat)`
-  - `_exit (man 2 fstat)`
-  - `_exit (man 3 strtok)`
-  - `_exit (man 2 wait)`
-  - `_exit (man 2 waitpid)`
-  - `_exit (man 2 wait3)`
-  - `_exit (man 2 wait4)`
-  - `_exit (man 2 write)`
+  - `getcwd (man 3 getcwd)`
+  - `getline (man 3 getline)`
+  - `isatty (man 3 isatty)`
+  - `kill (man 2 kill)`
+  - `malloc (man 3 malloc)`
+  - `open (man 2 open)`
+  - `opendir (man 3 opendir)`
+  - `perror (man 3 perror)`
+  - `read (man 2 read)`
+  - `readdir (man 3 readdir)`
+  - `signal (man 2 signal)`
+  - `stat (man 2 stat)`
+  - `lstat (man 2 lstat)`
+  - `fstat (man 2 fstat)`
+  - `strtok (man 3 strtok)`
+  - `wait (man 2 wait)`
+  - `waitpid (man 2 waitpid)`
+  - `wait3 (man 2 wait3)`
+  - `wait4 (man 2 wait4)`
+  - `write (man 2 write)`
 
 ## Compilation
   -  Shell will be compiled this way:
@@ -91,7 +91,6 @@ What you should learn from this project:
   hsh main.c shell.c test_ls_2
   $
   ```
-
 *******************************************************************************
 
 ### Example of the shell working:
@@ -116,37 +115,6 @@ random_user@ubuntu:~/shell$ echo "/bin/ls" | ./shell
 env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat test_scripting.sh  wait.c
 #cisfun$ random_user@ubuntu:~/shell$
 ```
-
-## Flow Charts
-
-* Principal function: **_printf()**
-![_printf() Flow Chart](https://drive.google.com/uc?export=view&id=1aN-8rwHlt2NkIHIplX4ULX1dhkE5b7er "_printf() Flow Chart")
-
-
-* Middle Function: **get_function()**
-
-![get_function() Flow Chart](https://drive.google.com/uc?export=view&id=12vfJb7XMQnKZ46oEMLjumfN3DgQ_dcnw "get_function() Flow Chart")
-
-
-* Helper Function 1: **print_char()**
-
-![print_char() Flow Chart](https://drive.google.com/uc?export=view&id=15p9zDCtmTLbvigioX0GZT29OIsK9bUQm "print_char() Flow Chart")
-
-
-* Helper Function 2: **print_string()**
-
-![print_string() Flow Chart](https://drive.google.com/uc?export=view&id=1l48y0X_98ILty5c6v-dE8KqbLYw4AAEl "print_string() Flow Chart")
-
-
-* Helper Function 3: **print_digit()**
-
-![print_digit() Flow Chart](https://drive.google.com/uc?export=view&id=1sCZu-uzpqFSDNL1KRrU6MxD_Q3jXH9N- "print_digit() Flow Chart")
-
-
-* Helper Function 4: **print_mod()**
-
-![print_mod() Flow Chart](https://drive.google.com/uc?export=view&id=1nCmT8oNo0hyIx8Zo9ucFGRvy7n63HDiA "print_mod() Flow Chart")
-
 
 ## Authors
 * **Nelson Arevalo** - [NelsonarevaloF](https://github.com/NelsonarevaloF/)
